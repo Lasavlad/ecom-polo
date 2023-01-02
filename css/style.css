@@ -1,0 +1,140 @@
+:root{
+    --dark_orange: #973131;
+    --orange: #F59032;
+    --LogoFont: 'ABeeZee';
+    --interFont: 'Inter', sans-serif;
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 5.653rem;
+}
+h2 {
+    font-size: 3.998rem;
+}
+h3 {
+    font-size: 2.827;
+}
+h4 {
+    font-size: 1.999rem;
+}
+h5 {
+    font-size: 1.414rem;
+}
+
+html{
+    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    background-color: var(--dark_orange);
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+   
+}
+
+.navLogo{
+    padding-left: 4rem;
+    font-family: var(--LogoFont);
+    font-weight: 700;
+    color: var(--white);
+}
+
+.navLinks {
+    padding-right: 10rem;
+    color: var(--white);
+    z-index: 5;
+}
+.navLinks h4 {
+    font-family: var(--interFont);
+    font-weight: 400;
+    cursor: pointer;
+}
+.navLinks h4.active{
+    color: var(--orange);
+}
+
+.navLinks ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    top: -10px;
+    right: -500px;
+    transition: right 0.3s;
+    width: 295px;
+    height: 400px;
+    background-color: var(--dark_orange);
+    box-shadow: 0px 0px 5px #000;
+    justify-content: center;
+    padding-left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 7rem;
+    z-index: -1;
+    margin: 0;
+}
+
+.navLinks ul.active{
+    right: 0px;
+}
+
+.verticalLine {
+    width: 90%;
+    border-bottom: 1.2px solid rgba(0, 0, 0, 0.381);
+    align-self: center;
+}
+
+.navLinks ul a {
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navLinkItem {
+    font-size: 2rem;
+    font-family: var(--interFont);
+    font-weight: 400;
+    padding: 1.5rem 0;
+}
+
+.navVerticalLine{
+    border-bottom: 1px solid #fff;
+    width: 5rem;
+    position: absolute;
+}
+
+.navVerticalLine.active {
+    border: 2px solid var(--orange);
+}
+
+.navVerticalLine.left{
+    top: 46px;
+    right: 190px;
+}
+
+.navVerticalLine.right{
+    top: 46px;
+    right: 55px;
+
+}
