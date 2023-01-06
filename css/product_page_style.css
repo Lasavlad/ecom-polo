@@ -406,7 +406,7 @@ nav {
     border: 1px solid var(--bright-black);
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .wrapper {
         max-width: 350px;
     }
